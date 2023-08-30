@@ -1,10 +1,16 @@
 version: "3.7"
 
 services:
+  rotator:
+    build: ./rotator
+    container_name: rotator
+    restart: always
+    expose:
+      - 8080
 
   nginx:
     build: ./nginx
     container_name: nginx
     restart: always
     ports:
-      - "8001:8001"
+      - "8080:8080"

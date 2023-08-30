@@ -35,7 +35,7 @@ func New() *server {
 func (s *server) Run() error {
 	log.Info().Msg("server started")
 	srv := &http.Server{
-		Addr:    ":8001",
+		Addr:    ":8080",
 		Handler: s.gin,
 	}
 	s.listenForSignals(srv)
