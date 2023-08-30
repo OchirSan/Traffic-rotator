@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "8001:8001"
