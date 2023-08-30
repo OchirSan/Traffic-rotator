@@ -5,6 +5,5 @@ package database
 //
 //type Event struct {
 //	EventTime time.Time `db:"event_time"`
-//	ClickURL string `db:"click_url"`
-//	Country string `db:"country"`
+//	ClickURL  string    `db:"click_url"`
 //}

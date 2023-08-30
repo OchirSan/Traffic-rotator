@@ -2,6 +2,7 @@ package server
 
 import (
 	"context"
+	//"github.com/OchirSan/Traffic-rotator/internal/database"
 	ginzerolog "github.com/dn365/gin-zerolog"
 	"github.com/gin-gonic/gin"
 	"github.com/rs/zerolog/log"
@@ -13,11 +14,17 @@ import (
 
 type server struct {
 	gin *gin.Engine
+	//	collector eventsCollector
 }
+
+//type eventsCollector interface {
+//	AsyncUpdate(event *database.Event)
+//}
 
 func New() *server {
 	srv := &server{
 		gin: gin.New(),
+		//	collector: collector,
 	}
 	srv.gin.Use(gin.Recovery())
 	srv.gin.Use(ginzerolog.Logger("gin"))

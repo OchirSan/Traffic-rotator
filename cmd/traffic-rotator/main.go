@@ -34,6 +34,11 @@ func main() {
 	//
 	//sqldb.SetMaxOpenConns(5)
 	//sqldb.SetMaxIdleConns(5)
+
+	//eventsCollector := collector.New()
+
+	//db := database.New(sqldb, eventsCollector)
+
 	serv := server.New()
 	err := serv.Run()
 	if err != nil {
