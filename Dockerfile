@@ -24,4 +24,4 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /usr/bin
 COPY --from=build /go/src/app/bin/traffic-rotator traffic-rotator
 
-CMD ["uwsgi", "app.ini"]
+EXPOSE 80
