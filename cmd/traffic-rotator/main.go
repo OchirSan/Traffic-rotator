@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/OchirSan/Traffic-rotator/rotator/internal/server"
+	"github.com/OchirSan/Traffic-rotator/internal/server"
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
 	"github.com/rs/zerolog"

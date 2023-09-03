@@ -1,1 +1,1 @@
-curl 'http://127.0.0.1:8080/serve'
+curl 'http://127.0.0.1:80/4448f38b-cb6e-48be-aa25-fa4ee354e735'
